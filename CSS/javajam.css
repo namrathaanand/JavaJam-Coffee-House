@@ -1,0 +1,164 @@
+/* Global styling for all pages*/
+
+body {
+    margin: 0;
+    padding-top: 15px;
+    background-image: url('../Images/background.gif');
+}
+
+#wrapper{
+    font-family: Verdana, Arial, Sans-serif;
+    width: 80%;    
+    background-color: #FCEBB6;
+    margin: 0px auto;
+    color: #221811;
+}
+
+h1 {
+    line-height: 200%;
+    text-align: left;
+	background-color: #D2B48C;
+    padding-left: 15px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#navigation {
+    text-align: center;
+    text-weight: bold;
+    float: none;
+    width: 11%;
+    display: table-cell;
+    border: 2px solid black;
+    background-image: url('../Images/javajamlogo.jpg');
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: #22170b;
+    line-height: 1.5;
+       
+}
+
+#navigation a{
+    color: #FCEBB6;
+    text-decoration: none;
+}
+
+#navigation a:visited{
+    color: #D2B48C;
+}
+
+img{
+    margin-top: 0;
+    padding-top: 0;
+    height: 250px;
+    width: inherit;
+    border-bottom: 3px solid black;
+}
+
+footer {
+	text-align: center;
+	background-color: #D2B48C;
+	font-size: .60em;
+	font-style: italic;
+    margin-top: 0;  
+    border-top: 2px solid black;
+    padding-bottom: 8px;
+}
+
+#body{
+    width: 100%;
+    display: table;
+    border-bottom: 2px solid black;
+}
+
+#body > h3{
+    padding-left: 50px;
+}
+
+#body > p{
+    padding-left: 35px;
+}
+
+
+/* Styling for home page*/
+
+#inner p{
+  
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+#inner h3{
+    padding-left: 26px;
+}
+
+
+/* Styling for Menu Page*/
+
+th{
+    text-align: left;
+    padding-left: 50px;
+}
+
+table{
+    padding-left: 35px;
+    padding-bottom: 10px;
+}
+
+td{
+    padding-right: 20px; 
+    padding-bottom: 20px;
+}
+
+/* Styling for Music Page*/
+
+#div1 h4{
+    text-align: center;
+}
+
+#months{
+    font-family: Verdana, Arial, Sans-serif;
+    width: 200px;
+    height: 40px;
+    padding-left: 60px;
+    margin-left: 430px;
+    background-color: #D2B48C;
+   
+}
+
+#submit{
+    font-family: Verdana, Arial, Sans-serif;
+    width: 100px;
+    height: 30px;
+    background-color: #D2B48C;
+    margin-left: 485px;
+}
+
+#result{
+    margin-left: 300px;
+}
+
+/*#months img{
+    padding-left: 200px;
+    height: 50px;
+    border-bottom: 0;
+}
+*/
+
+/*
+#months p:nth-of-type(1){
+    
+    top: 498px;
+    left: 540px;
+}
+
+#months p:nth-of-type(2){
+    position: absolute;
+    top: 635px;
+    left: 540px;
+}
+*/ 
+
+
+

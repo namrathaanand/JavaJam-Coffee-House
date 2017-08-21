@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head lang="en">
+		<meta charset="UTF-8">
+		<title>Jobs Page</title>
+		<link rel="stylesheet" href="CSS/javajam.css">
+        <script type="text/javascript">
+            function validateForm() 
+            {
+                var name=document.forms["job"]["name"].value;
+                var email=document.forms["job"]["email"].value;
+                var exp=document.forms["job"]["experience"].value;
+                var splchar = new RegExp(/[~`!#$%\^&*+=\-\[\]\\';,/{}|\\":<>\?]/);
+                
+                   if (name==null || name=="")
+                     {
+                      alert("Name field is empty. Please enter name.");
+                      document.getElementById("name").focus();
+                      return false;
+                     }
+
+                    if (email==null || email=="") {
+                      alert("Email field is empty. Please enter Email ID.");
+                        document.getElementById("email").focus();
+                      return false;
+                    }
+                    
+                    if (exp==null || exp=="") {
+                      alert("Experience field is empty. Please enter experience.");
+                        document.getElementById("exp").focus();
+                      return false;
+                    }
+                
+                else{
+                    
+                    if(splchar.test(name)) {
+                        alert("Please do not use special characters in Name field.");
+                        document.getElementById("name").focus();
+                        return false;
+                    }
+                    
+                    else if(splchar.test(exp)) {
+                        alert("Please do not use special characters in Experience field.");
+                        document.getElementById("exp").focus();
+                        return false;
+                    }
+                    else{
+                    alert("All Done!! You have entered all the details correctly. Your form has been submitted");
+                          }
+                }
+            }
+        </script>
+	</head>
+	
+	<body>
+      <div id="wrapper">
+	  <div id="body">
+		  <div id="navigation">
+			<header>
+                <nav>
+			         <h4>
+                        <br><br><br><br><br>
+                        <a href="index.html">Home</a><br>
+				
+                        <a href="menu.html">Menu</a><br>
+				
+                        <a href="music.html">Music</a><br>
+				
+				        <a href="jobs.html">Jobs</a><br>
+			         </h4>
+			     </nav>
+              </header>
+		  </div>
+        
+		  <h1>JavaJam Coffee House</h1>
+                   
+          <h3>Jobs at JavaJam</h3>
+          <p>Want to work at JavaJam? Fill out the form below to start your application. Required fields are marked with an asterisk (*).</p>
+            <br> 
+          <div id="form">
+          <form name="job" onsubmit="return validateForm()">
+              <table>
+                <tr>
+                    <td><label>*Name: </label></td>
+                    <td><input type="text" name="name" id="name"></td>
+                </tr>
+                <tr>
+                    <td><label> *E-mail: </label></td>
+                    <td><input type="email" name="email" id="email" ></td>
+                </tr>  
+                <tr>
+                    <td><label>*Experience: </label></td>
+                    <td><input type="text" name="experience" style="height:30px; width:190px" id="exp"> </td>
+                </tr>
+             </table>
+             <input type="submit" value="Apply Now" id="submit">
+              <br><br><br>
+          </form>
+          </div>      
+       </div>
+        
+	   <footer>
+			Copyright &copy; 2016 JavaJam Coffee House <br>
+			<a href="mailto:namratha@anand.com">namratha@anand.com</a>
+		</footer>
+        </div>
+    </body>
+	
+</html>

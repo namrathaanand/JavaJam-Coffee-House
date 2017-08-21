@@ -1,0 +1,31 @@
+/* Global styling for all pages*/
+
+body {
+    margin: 0;
+    padding-top: 15px;
+    padding-left: 25px;
+    font-family: Verdana, Arial, Sans-serif;
+    background-image: url('../Images/background.gif');
+}
+
+#output{
+    text-align: center;
+}
+
+#label{
+    color: black;
+}
+
+#form-input{
+    height: 25px;
+}
+
+#button{
+    height: 30px;
+    width: 90px;
+   
+    
+}
+
+
+
